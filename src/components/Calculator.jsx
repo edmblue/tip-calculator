@@ -51,12 +51,12 @@ const Calculator = () => {
   };
 
   return (
-    <div className="lg:grid lg:grid-cols-2 gap-10">
+    <div className="md:grid md:grid-cols-2 gap-10">
       <div className="space-y-5">
         <div>{BillField()}</div>
         <div className="relative">
           <label className="text-neutralDarkGrayishCyan">Select Tip %</label>
-          <div className="grid grid-cols-2 gap-5 mt-4 lg:grid-cols-3 lg:items-center">
+          <div className="grid grid-cols-2 gap-5 mt-4 md:grid-cols-3 md:items-center">
             {percentages.map((item, i) => {
               return (
                 <Button
@@ -83,10 +83,10 @@ const Calculator = () => {
           {NumberPeopleField()}{' '}
         </div>
       </div>
-      <div className="bg-primaryDarkGreen rounded-xl p-5 mt-5 lg:flex lg:flex-col">
+      <div className="bg-primaryDarkGreen rounded-xl p-5 mt-5 md:flex md:flex-col">
         <div className="flex justify-between items-center">
           <div>
-            <p className="text-white text-lg">Tip Amount</p>
+            <p className="text-white text-md">Tip Amount</p>
             <p className="text-neutralGraishCyan">/ person</p>
           </div>
           <div>
@@ -95,7 +95,7 @@ const Calculator = () => {
         </div>
         <div className="flex justify-between items-center mt-5">
           <div>
-            <p className="text-white text-lg">Total</p>
+            <p className="text-white text-md">Total</p>
             <p className="text-neutralGraishCyan">/ person</p>
           </div>
           <div>
@@ -104,7 +104,7 @@ const Calculator = () => {
         </div>
         <button
           type="button"
-          className="uppercase w-full bg-primaryStrongCyan py-2 mt-4 rounded-lg text-primaryDarkGreen text-xl hover:cursor-pointer  hover:bg-neutralLightGrayishCyan lg:mt-auto"
+          className="uppercase w-full bg-primaryStrongCyan py-2 mt-4 rounded-md text-primaryDarkGreen text-xl hover:cursor-pointer  hover:bg-neutralLightGrayishCyan md:mt-auto"
           onClick={handleReset}
         >
           Reset
