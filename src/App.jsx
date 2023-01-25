@@ -7,7 +7,7 @@ function App() {
       <div className="mt-10">
         <img src={Logo} alt="" aria-hidden="true" />
       </div>
-      <main className="mt-10 w-full bg-white rounded-t-3xl p-7 md:w-1/2 md:rounded-3xl ">
+      <main className="mt-10 w-full bg-white rounded-t-3xl p-7 lg:w-1/2 lg:rounded-3xl ">
         <Calculator />
       </main>
     </div>
